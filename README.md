@@ -33,17 +33,23 @@ Project Requirements:
 
 Project Deployment:
 1. For Step A, main.tf file was created containing the necessary IaC to meet the requirements.
+
    Used comments on the cloud shell are:
-     -terraform init
-     -terraform plan
-     -terraform apply
-   To verify the creation process, the resources were checked from the Cloud Console. The IP address of the load balancer was also checked. The screenshot for the Web server page:
+
+   -terraform init
+
+   -terraform plan
+
+   -terraform apply
+
+    To verify the creation process, the resources were checked from the Cloud Console. The IP address of the load balancer was also checked. The screenshot for the Web server page:
+   
    ![image](https://github.com/tuanaguler/gcp-myFirstProject/assets/63639594/1b2ab33e-c590-4606-a49a-2a992d55653c)
 
-2. For Step B, a service account named "terraform-service-account" was created and necessary permissions were given to complete the rest of the project. A key was generated and added to Cloud        Shell. Then the service account was connected to Terraform using the "export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key-file.json" command. The connection was confirmed.
+3. For Step B, a service account named "terraform-service-account" was created and necessary permissions were given to complete the rest of the project. A key was generated and added to Cloud        Shell. Then the service account was connected to Terraform using the "export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key-file.json" command. The connection was confirmed.
 
-3. For Step B, a CPU usage alert was created with a threshold of 35%.
+4. For Step B, a CPU usage alert was created with a threshold of 35%.
 
-4. For Step D, a Cloud SQL instance was created named "best-sql-ever" in the region "europe-west1". However, this step could not completed fully due to some connection problems.
+5. For Step D, a Cloud SQL instance was created named "best-sql-ever" in the region "europe-west1". However, this step could not completed fully due to some connection problems.
 
-5. For Step E, a Cloud Storage Bucket was created and added as a backend to the "main.tf" file.
+6. For Step E, a Cloud Storage Bucket was created and added as a backend to the "main.tf" file.
