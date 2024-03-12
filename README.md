@@ -5,7 +5,8 @@ Objective: Design, deploy, and secure a scalable web application on Google Cloud
 
 Project Requirements: 
 
-   A) Infrastructure as Code (IaC) - TERRAFORM Define and deploy your infrastructure using Terraform:
+   A. Infrastructure as Code (IaC) - TERRAFORM Define and deploy your infrastructure using Terraform:
+     
       1. Create a VPC network.
       2. Create subnets within the VPC. (Region: europe-west1)
       3. Create a Cloud Router in the network and establish a NAT Gateway.
@@ -22,13 +23,13 @@ Project Requirements:
         ◦ Target CPU utilization: 50%
       7. Create a load balancer in front of the instances.
 
-   B) Security: Create a service account for Terraform and link Terraform to the project using this service account. Set the service account permissions according to the least privilege principle.
+   B. Security: Create a service account for Terraform and link Terraform to the project using this service account. Set the service account permissions according to the least privilege principle.
 
-   C) Monitoring and Logging: Create alarms based on CPU usage for the instances you have created.
+   C. Monitoring and Logging: Create alarms based on CPU usage for the instances you have created.
 
-   D) Creating Database: Create a Cloud SQL instance with a Private IP (PostgreSQL). Connect to one of the VMs via SSH. Install Cloud SQL Auth Proxy on the VM. Connect to the Cloud SQL instance using the Private IP.
+   D. Creating Database: Create a Cloud SQL instance with a Private IP (PostgreSQL). Connect to one of the VMs via SSH. Install Cloud SQL Auth Proxy on the VM. Connect to the Cloud SQL instance using the Private IP.
 
-   E) Cloud Storage: Use Google Cloud Storage as the remote backend. The bucket created should not be public and should have versioning enabled. Store your Terraform state file in this bucket.
+   E. Cloud Storage: Use Google Cloud Storage as the remote backend. The bucket created should not be public and should have versioning enabled. Store your Terraform state file in this bucket.
 
 Project Deployment:
 1. For Step A, main.tf file was created containing the necessary IaC to meet the requirements.
